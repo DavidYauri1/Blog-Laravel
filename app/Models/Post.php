@@ -15,11 +15,11 @@ class Post extends Model
 
     //Relacion uno a muchos inversa
 
-    public function users(){
+    public function user(){
         return $this->belongsTo(User::class);
     }
 
-    public function categories(){
+    public function category(){
         return $this->belongsTo(Category::class);
  
     }
